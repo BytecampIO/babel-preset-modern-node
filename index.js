@@ -76,12 +76,12 @@ function preset(context, opts) {
             enableFor('0.12') && require('babel-plugin-transform-es2015-shorthand-properties'),
             enableFor('0.12') && require('babel-plugin-transform-es2015-typeof-symbol'),
 // ---- v5.12
-            enableFor('5.12') && [require("babel-plugin-transform-es2015-spread"), { "loose": loose }],
-            enableFor('5.12') && require('babel-plugin-transform-es2015-parameters'),
-            enableFor('5.12') && require('babel-plugin-transform-es2015-sticky-regex'),
-            enableFor('5.12') && require('babel-plugin-transform-es2015-unicode-regex'),
+            enableFor('6.3') && [require("babel-plugin-transform-es2015-spread"), { "loose": loose }],
+            enableFor('6.3') && require('babel-plugin-transform-es2015-parameters'),
+            enableFor('6.3') && require('babel-plugin-transform-es2015-sticky-regex'),
+            enableFor('6.3') && require('babel-plugin-transform-es2015-unicode-regex'),
 // ---- v6.2
-            enableFor('6.2') && require('babel-plugin-array-includes').default,
+            enableFor('6.3') && require('babel-plugin-array-includes').default,
 // ---- v6.3
             enableFor('6.3') && [require("babel-plugin-transform-es2015-destructuring"), { "loose": loose }],
             enableFor('6.3') && modules === "amd" && [require("babel-plugin-transform-es2015-modules-amd"), { "loose": loose }],
